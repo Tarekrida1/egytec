@@ -3969,13 +3969,17 @@ textarea.form-input {
 }
 
 .desktop .project-grid .inner {
+          -webkit-transition: .3s ease-in-out;
+          -moz-transition: .3s ease-in-out;
+          -o-transition: .3s ease-in-out;
           transition: .3s ease-in-out;
-          transform: scale(0) translateX(-100%);
+/*           
+          transform: scale(0) ,translateX(-100%); */
           opacity: 0;
 }
 
 .desktop .project-grid:hover .inner {
-          transform: scale(1) translateX(0);
+          /* transform: scale(1),translateX(0); */
           opacity: 1;
 }
 
@@ -10879,4 +10883,11 @@ left: 0;
                     padding-top: unset;
                     padding: 10px 0;
                 }  
+                .text-decorative:before {
+                          display: none;
+                }
+                .jumbotron-custom-1 .title {
+                          margin: 0;
+                          padding: 0;
+                }
 }
